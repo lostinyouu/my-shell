@@ -9,5 +9,5 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-sed -e "/66/a zsh-autosuggestions" -i test.txt
+sed -e "/66/a zsh-autosuggestions" -i ~/.zshrc
 chsh -s /bin/zsh
