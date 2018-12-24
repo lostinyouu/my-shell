@@ -13,7 +13,7 @@ yum install -y git
 echo "install git done"
 
 # 安装 oh-my-zsh
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 echo "install oh-my-zsh done"
 
 # 安装 zsh-autosuggestions
@@ -27,10 +27,12 @@ echo "install zsh-syntax-highlighting done"
 
 # 安装 autojump
 git clone git://github.com/joelthelion/autojump.git ~/autojump
-~/autojump/install.py
+cd ~/autojump
+./install.py
 echo "install autojump done"
 
 # 复制文件 .zshrc
+cd ~/my-shell
 cp -f ./config/.zshrc ~/.zshrc
 echo ".zshrc done"
 
