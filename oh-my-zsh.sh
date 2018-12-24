@@ -38,3 +38,7 @@ echo ".zshrc done"
 
 # 切换 zsh
 chsh -s /bin/zsh
+
+# 退出
+
+exit
